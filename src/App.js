@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HomeScreen from './HomeScreen';
 import QuizScreen from './QuizScreen';
 import ResultScreen from './ResultScreen';
-import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 
 function App() {
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
@@ -22,91 +22,133 @@ function App() {
   };
 
   const questionDetails = {
-    'option1': {
+    'option1': { // musculos toraco-apendiculares anteriores
       'option1-q1': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_maximus_02.jpeg',
+        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_major_muscle.jpeg',
         options: ['Option A', 'Option B', 'Option C'],
         correctOption: 'Option A',
       },
       'option1-q2': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_med.jpeg',
+        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_minor_muscle.jpeg',
         options: ['Option X', 'Option Y', 'Option Z'],
         correctOption: 'Option Y',
       },
       'option1-q3': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_min.jpeg',
+        imagePath: '/images/toraco_apendiculares_anteriores/musculus_subclavius_02.jpeg',
+        options: ['Option P', 'Option Q', 'Option R'],
+        correctOption: 'Option R',
+      },
+      'option1-q4': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/toraco_apendiculares_anteriores/musculus_serratus_anterior.jpeg',
+        options: ['Option P', 'Option Q', 'Option R'],
+        correctOption: 'Option R',
+      },
+      'option1-q5': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/toraco_apendiculares_anteriores/musculus_levator_scapulae_1.jpeg',
         options: ['Option P', 'Option Q', 'Option R'],
         correctOption: 'Option R',
       },
       // Add more mappings as needed
     },
-    'option2': {
+    'option2': { // musculos toraco-apendiculares posteriores
       'option2-q1': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_maximus_02.jpeg',
+        imagePath: '/images/toraco_apendiculares_posteriores/latissimus_dorsi_1.jpeg',
         options: ['Option A', 'Option B', 'Option C'],
         correctOption: 'Option A',
       },
       'option2-q2': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_med.jpeg',
+        imagePath: '/images/toraco_apendiculares_posteriores/rhomboid_major.jpeg',
         options: ['Option X', 'Option Y', 'Option Z'],
         correctOption: 'Option Y',
       },
       'option2-q3': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_min.jpeg',
+        imagePath: '/images/toraco_apendiculares_posteriores/rhomboid_minor-1.jpeg',
+        options: ['Option P', 'Option Q', 'Option R'],
+        correctOption: 'Option R',
+      },
+      'option2-q4': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/toraco_apendiculares_posteriores/trapezius_2.jpeg',
         options: ['Option P', 'Option Q', 'Option R'],
         correctOption: 'Option R',
       },
       // Add more mappings as needed
     },
-    'option3': {
+    'option3': { // musculos escapulo-umerais
       'option3-q1': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_maximus_02.jpeg',
+        imagePath: '/images/escapulo_umerais/deltoideus_2.jpeg',
         options: ['Option A', 'Option B', 'Option C'],
         correctOption: 'Option A',
       },
       'option3-q2': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_med.jpeg',
+        imagePath: '/images/escapulo_umerais/supraspinatus_1.jpeg',
         options: ['Option X', 'Option Y', 'Option Z'],
         correctOption: 'Option Y',
       },
       'option3-q3': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_min.jpeg',
+        imagePath: '/images/escapulo_umerais/pasted_image_0.jpeg',
+        options: ['Option P', 'Option Q', 'Option R'],
+        correctOption: 'Option R',
+      },
+      'option3-q4': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/escapulo_umerais/M._subscapularis.jpeg',
+        options: ['Option A', 'Option B', 'Option C'],
+        correctOption: 'Option A',
+      },
+      'option3-q5': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/escapulo_umerais/M._teres_major.jpeg',
+        options: ['Option X', 'Option Y', 'Option Z'],
+        correctOption: 'Option Y',
+      },
+      'option3-q6': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/escapulo_umerais/teres_minor_2.jpeg',
         options: ['Option P', 'Option Q', 'Option R'],
         correctOption: 'Option R',
       },
       // Add more mappings as needed
     },
-    'option4': {
+    'option4': { // musculos do braco
       'option4-q1': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_maximus_02.jpeg',
+        imagePath: '/images/braco/biceps_intro.jpeg',
         options: ['Option A', 'Option B', 'Option C'],
         correctOption: 'Option A',
       },
       'option4-q2': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_med.jpeg',
+        imagePath: '/images/braco/brachialis_1.jpeg',
         options: ['Option X', 'Option Y', 'Option Z'],
         correctOption: 'Option Y',
       },
       'option4-q3': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/gluteus/gluteus_min.jpeg',
+        imagePath: '/images/braco/M._coracobrachialis_1.jpeg',
+        options: ['Option P', 'Option Q', 'Option R'],
+        correctOption: 'Option R',
+      },
+      'option4-q4': {
+        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        imagePath: '/images/braco/M.M._triceps_brachii.jpeg',
         options: ['Option P', 'Option Q', 'Option R'],
         correctOption: 'Option R',
       },
       // Add more mappings as needed
     },
-    'option5': {
+    'option5': { // antebraco anterior e posterior
       'option5-q1': {
         question: 'Qual eh a origem do musculo abaixo?',
         imagePath: '/images/antebraco_anterior/flexor_carpi_ulnaris_2.jpeg',

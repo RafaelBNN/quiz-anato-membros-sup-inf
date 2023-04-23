@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
-import QuizScreen from './QuizScreen';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function HomeScreen(props) {
   const { onCheckboxChange, selectedCheckboxes } = props;

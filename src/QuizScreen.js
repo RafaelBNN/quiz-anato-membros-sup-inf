@@ -1,8 +1,6 @@
 import './App.css';
-import React, { useState } from 'react';
-import HomeScreen from './HomeScreen';
-import ResultScreen from './ResultScreen';
-import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function QuizScreen(props) {
     const { selectedCheckboxes, clearSelectedCheckboxes, questionDetails, handleFinishQuiz } = props;
