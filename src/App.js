@@ -24,34 +24,28 @@ function App() {
   const questionDetails = {
     'option1': { // musculos toraco-apendiculares anteriores
       'option1-q1': {
-        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        question: 'Qual dessas nao eh uma funcao do musculo pectoral maior?',
         imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_major_muscle.jpeg',
-        options: ['Option A', 'Option B', 'Option C'],
-        correctOption: 'Option A',
+        options: ['Aducao do umero', 'Flexao do braco', 'Protracao da escapula'],
+        correctOption: 'Protracao da escapula',
       },
       'option1-q2': {
-        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        question: 'Qual eh a insercao do musculo abaixo?',
         imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_minor_muscle.jpeg',
-        options: ['Option X', 'Option Y', 'Option Z'],
-        correctOption: 'Option Y',
+        options: ['Processo coracoide da escapula', 'Face inferior do terço médio da clavícula', 'Crista do tuberculo maior do umero'],
+        correctOption: 'Processo coracoide da escapula',
       },
       'option1-q3': {
-        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        question: 'Qual eh a insercao do musculo abaixo?',
         imagePath: '/images/toraco_apendiculares_anteriores/musculus_subclavius_02.jpeg',
-        options: ['Option P', 'Option Q', 'Option R'],
-        correctOption: 'Option R',
+        options: ['Option P', 'Option Q', 'Face inferior do terço médio da clavícula'],
+        correctOption: 'Face inferior do terço médio da clavícula',
       },
       'option1-q4': {
-        question: 'Qual eh a origem e insercao do musculo abaixo?',
+        question: 'Qual eh a origem do musculo abaixo?',
         imagePath: '/images/toraco_apendiculares_anteriores/musculus_serratus_anterior.jpeg',
-        options: ['Option P', 'Option Q', 'Option R'],
-        correctOption: 'Option R',
-      },
-      'option1-q5': {
-        question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/toraco_apendiculares_anteriores/musculus_levator_scapulae_1.jpeg',
-        options: ['Option P', 'Option Q', 'Option R'],
-        correctOption: 'Option R',
+        options: ['Faces externas e laterais da I a VI ou VII costelas', 'Faces externas e laterais da I a VII ou IX costelas', 'Faces externas e laterais da I a VIII ou IX costelas'],
+        correctOption: 'Faces externas e laterais da I a VIII ou IX costelas',
       },
       // Add more mappings as needed
     },
@@ -79,6 +73,12 @@ function App() {
         imagePath: '/images/toraco_apendiculares_posteriores/trapezius_2.jpeg',
         options: ['Option P', 'Option Q', 'Option R'],
         correctOption: 'Option R',
+      },
+      'option2-q5': {
+        question: 'Qual eh a origem do musculo abaixo?',
+        imagePath: '/images/toraco_apendiculares_anteriores/musculus_levator_scapulae_1.jpeg',
+        options: ['Tubérculos posteriores dos processos transversos das vértebras, C I a C III', 'Tubérculos posteriores dos processos transversos das vértebras, C I e C II', 'Tubérculos posteriores dos processos transversos das vértebras, C I a C IV'],
+        correctOption: 'Tubérculos posteriores dos processos transversos das vértebras, C I a C IV',
       },
       // Add more mappings as needed
     },

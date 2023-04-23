@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function ResultScreen(props) {
 
@@ -11,6 +11,7 @@ function ResultScreen(props) {
         <div className="container">
             <h1>Result Screen</h1>
             <p>You got {correctAnswers} correct answers!</p>
+            <p>(te airbisp)</p>
             <button onClick={() => {
                 navigate('/homescreen');
                 clearSelectedCheckboxes();
