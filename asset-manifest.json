@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/quiz-anato-membros-sup-inf/static/css/main.69b84fc5.css",
-    "main.js": "/quiz-anato-membros-sup-inf/static/js/main.75406825.js",
+    "main.js": "/quiz-anato-membros-sup-inf/static/js/main.63f592fe.js",
     "static/js/787.bf49f057.chunk.js": "/quiz-anato-membros-sup-inf/static/js/787.bf49f057.chunk.js",
     "index.html": "/quiz-anato-membros-sup-inf/index.html",
     "main.69b84fc5.css.map": "/quiz-anato-membros-sup-inf/static/css/main.69b84fc5.css.map",
-    "main.75406825.js.map": "/quiz-anato-membros-sup-inf/static/js/main.75406825.js.map",
+    "main.63f592fe.js.map": "/quiz-anato-membros-sup-inf/static/js/main.63f592fe.js.map",
     "787.bf49f057.chunk.js.map": "/quiz-anato-membros-sup-inf/static/js/787.bf49f057.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69b84fc5.css",
-    "static/js/main.75406825.js"
+    "static/js/main.63f592fe.js"
   ]
 }
