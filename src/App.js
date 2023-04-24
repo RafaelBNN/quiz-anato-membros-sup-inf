@@ -4,6 +4,7 @@ import HomeScreen from './HomeScreen';
 import QuizScreen from './QuizScreen';
 import ResultScreen from './ResultScreen';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+// import gluteusMedImage from './images/gluteus/gluteus_med.jpeg';
 
 function App() {
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
@@ -24,14 +25,14 @@ function App() {
   const questionDetails = {
     'option1': { // musculos toraco-apendiculares anteriores
       'option1-q1': {
-        question: 'Qual dessas nao eh uma funcao do musculo pectoral maior?',
-        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_major_muscle.jpeg',
+        question: 'Qual dessas nao eh uma funcao do musculo abaixo?',
+        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_major_muscle.png',
         options: ['Aducao do umero', 'Flexao do braco', 'Protracao da escapula'],
         correctOption: 'Protracao da escapula',
       },
       'option1-q2': {
         question: 'Qual eh a insercao do musculo abaixo?',
-        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_minor_muscle.jpeg',
+        imagePath: '/images/toraco_apendiculares_anteriores/pectoralis_minor_muscle.png',
         options: ['Processo coracoide da escapula', 'Face inferior do terço médio da clavícula', 'Crista do tuberculo maior do umero'],
         correctOption: 'Processo coracoide da escapula',
       },
@@ -124,7 +125,7 @@ function App() {
     'option4': { // musculos do braco
       'option4-q1': {
         question: 'Qual eh a origem e insercao do musculo abaixo?',
-        imagePath: '/images/braco/biceps_intro.jpeg',
+        imagePath: '/images/braco/biceps_intro.jpg',
         options: ['Option A', 'Option B', 'Option C'],
         correctOption: 'Option A',
       },
@@ -197,7 +198,7 @@ function App() {
       },
       'option5-q8': {
         question: 'Qual eh a origem do musculo abaixo?',
-        imagePath: '/images/antebraco_anterior/pronator_quadratus_1_copy.jpeg',
+        imagePath: '/images/antebraco_anterior/pronator_quadratus_1_copy.jpg',
         options: ['Face anterior distal da ulna', 'Face anterior distal do radio', 'Face posterior distal da ulna'],
         correctOption: 'Face anterior distal da ulna',
       },
@@ -215,7 +216,7 @@ function App() {
       },
       'option5-q12': {
         question: 'Qual eh a origem do musculo abaixo?',
-        imagePath: '/images/antebraco_posterior/Captura de tela 2023-04-23 120623.jpeg',
+        imagePath: '/images/antebraco_posterior/extensor_dos_dedos.png',
         options: ['Crista supraepicondilar lateral do úmero e septo intermuscular do braço', 'Epicôndilo medial do úmero', 'Epicôndilo lateral do úmero'],
         correctOption: 'Epicôndilo lateral do úmero',
       },

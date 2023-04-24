@@ -22,7 +22,7 @@ function QuizScreen(props) {
                 return (
                   <div key={questionKey}>
                     <p>{question}</p>
-                    <img src={imagePath} alt="" style={{ width: '200px', height: 'auto' }}/>
+                    <img src={imagePath} alt={imagePath.slice(imagePath.lastIndexOf('/')+1, imagePath.lastIndexOf('.'))} style={{ width: '200px', height: 'auto' }}/>
                     <ul>
                       {options.map(option => (
                         <li key={option}>
